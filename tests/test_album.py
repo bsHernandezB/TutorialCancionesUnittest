@@ -16,7 +16,7 @@ class AlbumTestCase(unittest.TestCase):
         self.session = Session()
 
         '''Crea una isntancia de Faker'''
-        self.data_factory = DatosAleatorio()
+        self.data_factory = DatosAleatorio
 
         '''Se programa para que Faker cree los mismos datos cuando se ejecuta'''
         DatosAleatorio.seed(100)
