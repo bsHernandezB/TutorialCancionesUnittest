@@ -12,7 +12,7 @@ if __name__ == '__main__':
 
    #crear interpretes
    interprete1 = Interprete(nombre = "Samuel Torres", texto_curiosidades = "Es colombiano y vive en NY")
-   interprete2 = Interprete(nombre = "Aldo Gavilann", texto_curiosidades = "Canto a Cuba")
+   interprete2 = Interprete(nombre = "Aldo Gavilan", texto_curiosidades = "Canto a Cuba")
    interprete3 = Interprete(nombre = "Buena Vista Social club")
    interprete4 = Interprete(nombre = "Arturo Sandoval", texto_curiosidades = "No sabia quien era")
    session.add(interprete1)
