@@ -1,7 +1,7 @@
 import unittest
 import random
 
-from src.logica.Aleatorio import DatosAleatorio
+from faker import Faker
 from src.logica.coleccion import Coleccion
 from src.modelo.album import Album, Medio
 from src.modelo.declarative_base import Session
@@ -16,10 +16,10 @@ class AlbumTestCase(unittest.TestCase):
         self.session = Session()
 
         '''Crea una isntancia de Faker'''
-        self.data_factory = DatosAleatorio
+        self.data_factory = Faker()
 
         '''Se programa para que Faker cree los mismos datos cuando se ejecuta'''
-        DatosAleatorio.seed(100)
+        Faker.seed(100)
 
         '''Genera 10 datos en data y creamos los álbumes'''
         self.data = []
